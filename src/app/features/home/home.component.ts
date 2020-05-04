@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
-  homeLogo = "../../../assets/images/Radiant-Logo-Red-200x128-10x.png";
+  homeLogo = "./assets/images/Radiant-Logo-Red-200x128-10x.png";
   homeTitle = "We build software that solves problems.";
   menuItems = [
     {
@@ -27,17 +27,17 @@ export class HomeComponent implements OnInit {
     title: "Our Delivery Method",
     steps: [
       {
-        img: "../../../../assets/images/people.png",
+        img: "./assets/images/people.png",
         description: `Our blended local, 
           nearshore and offshore execution team guarentees quality and efficiency.`,
       },
       {
-        img: "../../../../assets/images/process.png",
+        img: "./assets/images/process.png",
         description:
           "Radiant’s cycle of continuous delivery, integration and testing ensures performance and reliability.",
       },
       {
-        img: "../../../../assets/images/technology.png",
+        img: "./assets/images/technology.png",
         description:
           "We are experienced in web apps, mobile apps, internet of things, big data, devops and more.",
       },
@@ -47,12 +47,12 @@ export class HomeComponent implements OnInit {
   technicalExperienceData = {
     title: "We have decades of technical experience across industries.",
     technologyImg: [
-      "../../../../assets/images/petes.png",
-      "../../../../assets/images/apple.png",
-      "../../../../assets/images/pearson.png",
-      "../../../../assets/images/oskarblues.png",
-      "../../../../assets/images/microsoft.png",
-      "../../../../assets/images/pearl-izumi.png",
+      "./assets/images/petes.png",
+      "./assets/images/apple.png",
+      "./assets/images/pearson.png",
+      "./assets/images/oskarblues.png",
+      "./assets/images/microsoft.png",
+      "./assets/images/pearl-izumi.png",
     ],
   };
 
