@@ -1,0 +1,41 @@
+.work-item-container {
+  width: 350px;
+  height: 400px;
+  margin-top: 3.8rem;
+  background-size: cover;
+  &--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
+    padding: 20px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    &__sub-title {
+      font-family: "Industry";
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+    }
+    &__title {
+      font-family: Open Sans;
+      font-style: normal;
+      font-size: 26px;
+      line-height: 36px;
+      width: 85%;
+    }
+  }
+  .work-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-family: "Industry";
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}

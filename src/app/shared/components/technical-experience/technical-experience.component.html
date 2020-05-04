@@ -1,0 +1,6 @@
+<div class="technical-experience-container">
+  <p class="technical-experience-container__title">{{data?.title}}</p>
+  <div class="technical-experience-container--technology">
+    <img class="technical-experience-container--technology__img" *ngFor="let item of data?.technologyImg" [src]="item">
+  </div>
+</div>

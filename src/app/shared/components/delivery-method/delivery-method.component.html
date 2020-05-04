@@ -1,0 +1,11 @@
+<div class="delivery-method-container">
+  <p class="delivery-method-container__title">{{data?.title}}</p>
+  <div class="delivery-method-container--steps">
+    <hr class="stepper-line"/>
+    <div class="delivery-method-container--steps__info" *ngFor="let item of data.steps; let i = index">
+      <img class="delivery-method-container--steps__img delivery-method-container--steps__{{i}}" [src]="item.img" alt="">
+      <p class="delivery-method-container--steps__description delivery-method-container--steps__description__{{i}}">{{
+        item.description}}</p>
+    </div>
+  </div>
+</div>

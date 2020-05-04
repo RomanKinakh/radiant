@@ -1,0 +1,16 @@
+<div
+  class="work-item-container"
+  [style]="{
+    backgroundImage: 'url(' + work?.backgroundImage + ')'
+  }"
+>
+  <div class="work-item-container--info">
+    <div>
+      <p class="work-item-container--info__sub-title">{{ work?.subTitle }}</p>
+      <p class="work-item-container--info__title">{{ work?.title }}</p>
+    </div>
+    <button class="main-btn work-btn">
+      {{ work?.btnLabel }} <span class="btn-icon"></span>
+    </button>
+  </div>
+</div>

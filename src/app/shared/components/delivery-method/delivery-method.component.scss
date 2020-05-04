@@ -1,0 +1,69 @@
+.delivery-method-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.75rem 0 8rem;
+  overflow: auto;
+  &__title {
+    font-family: Industry;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 46px;
+    text-align: center;
+    color: #000000;
+  }
+  &--steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.6rem;
+    position: relative;
+    width: 100%;
+    max-width: 985px;
+    padding: 0 1rem;
+    &__description {
+      text-align: center;
+      margin-top: 1.2rem;
+      font-family: Open Sans;
+      width: 250px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 32px;
+      color: #000000;
+      &__0 {
+        padding-left: 1.5rem;
+      }
+      &__2 {
+        padding-right: 1.5rem;
+      }
+    }
+    .stepper-line {
+      position: absolute;
+      left: 67px;
+      top: 177px;
+      width: 85%;
+      height: 20px;
+      background-color: #E50000;
+      z-index: -1;
+    }
+    &__0 {
+      width: 315px;
+      height: 352px;
+      margin-top: 42px;
+    }
+    &__1 {
+      width: 280px;
+      height: 394px;
+    }
+    &__2 {
+      width: 305px;
+      height: 375px;
+      margin-top: 19px;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

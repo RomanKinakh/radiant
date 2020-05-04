@@ -1,0 +1,35 @@
+<div class="footer-section">
+  <div class="footer-image-container">
+    <img class="footer-image" src="../../../../assets/images/trees-birds.png" alt="">
+  </div>
+  <div class="footer-section--main">
+    <div class="footer-section--main__title">
+      <span
+        >Let’s Chat. We are ready to tackle your next technical challenge.</span
+      >
+      <button class="main-btn">CONTACT</button>
+    </div>
+    <hr class="horizontal-line" />
+    <div class="footer-section--main__menu-container">
+      <div class="flex">
+        <img
+          class="footer-logo"
+          src="../../../../assets/images/Radiant-Logo-Red-200x128-10x.png"
+          alt=""
+        />
+        <div class="footer-menu">
+          <a
+            *ngFor="let item of footerItems"
+            class="footer-item-link"
+            >{{ item.label }}</a
+          >
+        </div>
+      </div>
+      <div class="footer-text-container">
+        <span class="footer-text">
+          2020 // Created in Boulder, Colorado.
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

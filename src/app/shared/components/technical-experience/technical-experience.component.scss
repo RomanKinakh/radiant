@@ -1,0 +1,28 @@
+.technical-experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.95rem 0 4.25rem;
+  background-color: #000000;
+  &__title {
+    font-family: "Industry";
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 775px;
+    border: 1px solid #000000;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &--technology {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__img {
+      margin: 2.07rem 0.94rem 0;
+      width: 160px;
+      height: 160px;
+      opacity: 0.5;
+    }
+  }
+}

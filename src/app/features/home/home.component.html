@@ -1,0 +1,31 @@
+<div class="home-main-container">
+  <button class="home-main-container__btn">say hello</button>
+  <div class="menu-container">
+    <button class="menu-container--btn">
+      <div class="menu-container--btn__icon"></div>
+    </button>
+    <div class="menu-container--items">
+      <a class="menu-container--items__link" *ngFor="let item of menuItems" [routerLink]="item.link">{{
+        item.label
+      }}</a>
+    </div>
+  </div>
+  <div class="home-main-section">
+    <div>
+      <img class="home-main-section__logo" [src]="homeLogo" alt="" />
+      <p class="home-main-section__title">
+        {{ homeTitle }}
+      </p>
+    </div>
+    <div class="home-main-section__line"></div>
+  </div>
+</div>
+<app-delivery-method [data]="deliveryMethodData"></app-delivery-method>
+<app-technical-experience
+  [data]="technicalExperienceData"
+></app-technical-experience>
+<div class="work-section">
+  <div class="work-list-container">
+    <app-work-item *ngFor="let item of workItems" [work]="item"></app-work-item>
+  </div>
+</div>
