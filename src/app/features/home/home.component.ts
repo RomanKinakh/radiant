@@ -58,19 +58,19 @@ export class HomeComponent implements OnInit {
 
   workItems = [
     {
-      backgroundImage: "../../../../assets/images/heard-home-image.jpg",
+      backgroundImage: "./assets/images/heard-home-image.jpg",
       subTitle: "heard labs",
       title: "Restaurant Technology Reimagined",
       btnLabel: "view case study",
     },
     {
-      backgroundImage: "../../../../assets/images/pearson-home-image.jpg",
+      backgroundImage: "./assets/images/pearson-home-image.jpg",
       subTitle: "pearson",
       title: "Higher Education Enrollment & Onboarding",
       btnLabel: "view case study",
     },
     {
-      backgroundImage: "../../../../assets/images/casestudy-smthumb.jpg",
+      backgroundImage: "./assets/images/casestudy-smthumb.jpg",
       subTitle: "brand buzz",
       title: "Gamified Sales Training Tool",
       btnLabel: "view case study",
