@@ -1,0 +1,52 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  &--main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__line {
+      border: 1px solid #e50000;
+      height: 55px;
+    }
+    &__title {
+      margin-top: 0.8125rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 50px;
+      text-align: center;
+    }
+    &__description {
+      margin-top: 1.25rem;
+      font-family: Open Sans;
+      max-width: 730px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 34px;
+      text-align: center;
+    }
+  }
+  &__logo {
+    position: absolute;
+    width: 130px;
+    height: 84px;
+    top: 1.25rem;
+    left: 6.25rem;
+  }
+  &__menu {
+    position: absolute;
+    top: 3.8125rem;
+    right: 6.25rem;
+  }
+}
+
+.header-theme-dark {
+  color: #000000;
+}
+
+.header-theme-light {
+  color: #ffffff;
+  background: black;
+}

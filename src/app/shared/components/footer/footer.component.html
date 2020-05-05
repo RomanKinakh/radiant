@@ -1,6 +1,6 @@
 <div class="footer-section">
   <div class="footer-image-container">
-    <img class="footer-image" src="./assets/images/trees-birds.png" alt="">
+    <img class="footer-image" src="./assets/images/trees-image.png" alt="">
   </div>
   <div class="footer-section--main">
     <div class="footer-section--main__title">
@@ -14,12 +14,13 @@
       <div class="flex">
         <img
           class="footer-logo"
-          src="./assets/images/Radiant-Logo-Red-200x128-10x.png"
+          src="./assets/images/logo-light.png"
           alt=""
         />
         <div class="footer-menu">
           <a
             *ngFor="let item of footerItems"
+            [routerLink]="item.link"
             class="footer-item-link"
             >{{ item.label }}</a
           >

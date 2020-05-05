@@ -9,8 +9,8 @@
       <p class="work-item-container--info__sub-title">{{ work?.subTitle }}</p>
       <p class="work-item-container--info__title">{{ work?.title }}</p>
     </div>
-    <button class="main-btn work-btn">
-      {{ work?.btnLabel }} <span class="btn-icon"></span>
+    <button class="main-btn work-btn" (click)="navigate(work?.button?.link)">
+      {{ work?.button?.label }} <span class="btn-icon"></span>
     </button>
   </div>
 </div>

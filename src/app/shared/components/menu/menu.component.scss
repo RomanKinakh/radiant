@@ -1,0 +1,35 @@
+.main-menu-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-color: #e50000;
+  padding: 1.875rem 6.25rem;
+  box-sizing: border-box;
+  &__logo {
+    width: 130px;
+    height: 84px;
+  }
+  &__close-btn {
+    height: 52px;
+  }
+  &--list {
+    list-style: none;
+    margin-left: 14rem;
+    &-item {
+      margin-bottom: 1.875rem;
+    }
+    &__link {
+      font-size: 70px;
+      line-height: 70px;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .menu-active-link {
+      border-bottom: 20px solid #0D1B51;
+    }
+  }
+}
+

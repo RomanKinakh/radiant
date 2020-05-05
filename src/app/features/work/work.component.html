@@ -1,0 +1,32 @@
+<app-header [theme]="headerTheme" [data]="headerData"></app-header>
+<div class="work-container">
+  <div
+    class="work-container--item"
+    *ngFor="let work of workItems"
+    [style]="{
+      backgroundImage: 'url(' + work?.backgroundImage + ')'
+    }"
+  >
+    <div class="work-container--blur-image">
+      <div>
+        <p class="work-container--item__title">
+          {{ work?.title }}
+        </p>
+        <div class="work-line-container">
+          <hr class="work-line-container__line" />
+          <div class="work-line-container--item">
+            <div class="work-line-container--item__circle"></div>
+          </div>
+        </div>
+      </div>
+      <ul class="work-container--list">
+        <li class="work-container--list__item" *ngFor="let item of work?.list">{{item}}</li>
+      </ul>
+      <div class="work-container__btn">
+        <button class="main-btn work-btn" (click)="navigate(work?.button?.link)">
+          {{ work?.button?.label }} <span class="btn-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

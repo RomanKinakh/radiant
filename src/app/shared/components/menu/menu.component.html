@@ -1,0 +1,31 @@
+<div class="main-menu-container">
+  <div>
+    <img
+      class="main-menu-container__logo"
+      src="./assets/images/logo-black.png"
+      alt=""
+    />
+    <ul class="main-menu-container--list">
+      <li
+        *ngFor="let item of navigationMenu"
+        class="main-menu-container--list-item"
+      >
+        <a
+          class="main-menu-container--list__link"
+          [routerLink]="item?.link"
+          routerLinkActive="menu-active-link"
+          (click)="closeMenu()"
+          >{{ item?.label }}</a
+        >
+      </li>
+    </ul>
+  </div>
+  <button
+    class="menu-container--btn main-menu-container__close-btn"
+    (click)="closeMenu()"
+  >
+    <div
+      class="menu-container--btn__icon menu-container--btn__close-icon"
+    ></div>
+  </button>
+</div>

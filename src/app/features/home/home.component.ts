@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: "app-home",
@@ -6,20 +7,20 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
-  homeLogo = "./assets/images/Radiant-Logo-Red-200x128-10x.png";
+  homeLogo = "./assets/images/logo-light.png";
   homeTitle = "We build software that solves problems.";
   menuItems = [
     {
       label: "work",
-      link: "/",
+      link: "/work",
     },
     {
       label: "services",
-      link: "/",
+      link: "/services",
     },
     {
       label: "about",
-      link: "/",
+      link: "/about",
     },
   ];
 
@@ -61,23 +62,30 @@ export class HomeComponent implements OnInit {
       backgroundImage: "./assets/images/heard-home-image.jpg",
       subTitle: "heard labs",
       title: "Restaurant Technology Reimagined",
-      btnLabel: "view case study",
+      button: { label: "view case study", link: "/work/restaurant-technology-reimagined" },
     },
     {
       backgroundImage: "./assets/images/pearson-home-image.jpg",
       subTitle: "pearson",
       title: "Higher Education Enrollment & Onboarding",
-      btnLabel: "view case study",
+      button: { label: "view case study", link: "/work/higher-education-enrollment" },
     },
     {
       backgroundImage: "./assets/images/casestudy-smthumb.jpg",
       subTitle: "brand buzz",
       title: "Gamified Sales Training Tool",
-      btnLabel: "view case study",
+      button: { label: "view case study", link: "/work/gamified-sales-training-tool" },
     },
   ];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
+
+  navigate(link: string) {
+    if (link) {
+      this.router.navigateByUrl(link);
+    }
+  }
 }

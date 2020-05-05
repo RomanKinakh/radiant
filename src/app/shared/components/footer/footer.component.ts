@@ -9,23 +9,23 @@ export class FooterComponent implements OnInit {
   footerItems = [
     {
       label: "home",
-      link: "/",
+      link: "/home",
     },
     {
       label: "about",
-      link: "/",
+      link: "/about",
     },
     {
       label: "work",
-      link: "/",
+      link: "/work",
     },
     {
       label: "contact",
-      link: "/",
+      link: "/contact",
     },
     {
       label: "services",
-      link: "/",
+      link: "/services",
     },
   ];
 

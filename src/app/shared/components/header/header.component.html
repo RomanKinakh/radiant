@@ -1,0 +1,11 @@
+<div class="header-container header-theme-{{theme}}">
+  <div class="header-container--main">
+    <div class="header-container--main__line"></div>
+    <p class="header-container--main__title">{{data?.title}}</p>
+    <p class="header-container--main__description">{{data?.description}}</p>
+  </div>
+  <img class="header-container__logo" src="./assets/images/logo-{{theme}}.png" alt="" routerLink="/">
+  <button class="menu-container--btn header-container__menu" (click)="openMenu()">
+    <div class="menu-container--btn__icon menu-container--btn__icon-{{theme}}"></div>
+  </button>
+</div>

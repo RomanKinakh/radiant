@@ -1,8 +1,8 @@
 <div class="home-main-container">
-  <button class="home-main-container__btn">say hello</button>
+  <button class="home-main-container__btn" (click)="navigate('/contact')">say hello</button>
   <div class="menu-container">
     <button class="menu-container--btn">
-      <div class="menu-container--btn__icon"></div>
+      <div class="menu-container--btn__icon menu-container--btn__icon-light"></div>
     </button>
     <div class="menu-container--items">
       <a class="menu-container--items__link" *ngFor="let item of menuItems" [routerLink]="item.link">{{
