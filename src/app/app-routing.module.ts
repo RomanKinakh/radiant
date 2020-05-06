@@ -13,7 +13,7 @@ const routes: Routes = [{
 },
   {
     path: 'work',
-    component: WorkComponent
+    component: WorkComponent,
   },
   {
     path: 'services',
@@ -28,7 +28,7 @@ const routes: Routes = [{
     component: ContactComponent
   },
   {
-    path: 'work/:title',
+    path: 'work/:id',
     component: CurrentWorkInfoComponent
   },
   {

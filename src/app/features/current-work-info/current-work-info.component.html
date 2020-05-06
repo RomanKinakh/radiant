@@ -1,0 +1,130 @@
+<div class="work-header-container">
+  <div class="flex">
+    <img
+      class="work-header-container__logo"
+      src="./assets/images/logo-dark.png"
+      alt=""
+      routerLink="/"
+    />
+    <div class="work-title-section">
+      <div class="work-title-section__line"></div>
+      <p class="work-title-section__sub-title">{{ data?.subTitle }}</p>
+      <p class="work-title-section__title">{{ data?.title }}</p>
+    </div>
+  </div>
+  <div class="work-header-container--btns">
+    <a class="work-header-container--btns__back-link" routerLink="/work"
+      >back to all projects</a
+    >
+    <button
+      class="menu-container--btn header-container__menu"
+      (click)="openMenu()"
+    >
+      <div
+        class="menu-container--btn__icon menu-container--btn__icon-dark"
+      ></div>
+    </button>
+  </div>
+</div>
+<div class="work-main-container" *ngIf="data">
+  <div *ngIf="data?.firstImage" class="full-width">
+    <img class="work-main-container__image" [src]="data?.firstImage" alt="" />
+  </div>
+  <div class="text-section-container" *ngIf="data?.firstPartOfArticle">
+    <div
+      class="text-section-container--topic"
+      *ngFor="let article of data?.firstPartOfArticle"
+    >
+      <p class="text-section-container--topic__title">{{ article?.title }}</p>
+      <p
+        class="text-section-container--topic__paragraph"
+        *ngFor="let paragraph of article?.paragraphs"
+      >
+        {{ paragraph }}
+      </p>
+    </div>
+  </div>
+  <div *ngIf="data?.secondImage" class="full-width">
+    <img class="work-main-container__image" [src]="data?.secondImage" alt="" />
+  </div>
+  <div class="text-section-container" *ngIf="data?.secondPartOfArticle">
+    <div
+      class="text-section-container--topic"
+      *ngFor="let article of data?.secondPartOfArticle"
+    >
+      <p class="text-section-container--topic__title">{{ article?.title }}</p>
+      <p
+        class="text-section-container--topic__paragraph"
+        *ngFor="let paragraph of article?.paragraphs"
+      >
+        {{ paragraph }}
+      </p>
+    </div>
+  </div>
+  <div
+    class="full-width flex justify-content-end work-message-container"
+    *ngIf="data?.phrase"
+  >
+    <div>
+      <ul class="work-message-container--list">
+        <li
+          class="work-message-container--list__item"
+          *ngFor="let item of data?.phrase"
+        >
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-section-container" *ngIf="data?.thirdPartOfArticle">
+    <div
+      class="text-section-container--topic"
+      *ngFor="let article of data?.thirdPartOfArticle"
+    >
+      <p class="text-section-container--topic__title">{{ article?.title }}</p>
+      <p
+        class="text-section-container--topic__paragraph"
+        *ngFor="let paragraph of article?.paragraphs"
+      >
+        {{ paragraph }}
+      </p>
+    </div>
+  </div>
+  <div *ngIf="data?.thirdImage" class="full-width">
+    <img class="work-main-container__image" [src]="data?.thirdImage" alt="" />
+  </div>
+  <div class="text-section-container" *ngIf="data?.fourthPartOfArticle">
+    <div
+      class="text-section-container--topic"
+      *ngFor="let article of data?.fourthPartOfArticle"
+    >
+      <p class="text-section-container--topic__title">{{ article?.title }}</p>
+      <p
+        class="text-section-container--topic__paragraph"
+        *ngFor="let paragraph of article?.paragraphs"
+      >
+        {{ paragraph }}
+      </p>
+    </div>
+  </div>
+</div>
+<div class="other-projects-container">
+  <div class="other-projects-container--section">
+    <button
+      (click)="navigate(data?.prevProjectLink)"
+      class="other-projects-container--section__btn other-projects-container--section__btn-left"
+    >
+      <div
+        class="other-projects-container--section__icon-arrow other-projects-container--section__icon-arrow-left"
+      ></div>
+    </button>
+    <button
+      id="next-project"
+      (click)="navigate(data?.nextProjectLink)"
+      class="other-projects-container--section__btn"
+    >
+      <div class="other-projects-container--section__icon-arrow"></div>
+    </button>
+    <label for="next-project" class="other-projects-container--section__label">NEXT PROJECT</label>
+  </div>
+</div>
