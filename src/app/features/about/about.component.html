@@ -1,1 +1,38 @@
-<p>about works!</p>
+<div class="about-header-container">
+  <div class="about-header-container--blur">
+    <app-header [theme]="headerTheme" [data]="headerData"></app-header>
+    <div class="about-header-container--blur__title">
+      {{headerTitle}}
+    </div>
+  </div>
+</div>
+<div class="about-container">
+  <p class="about-container__title">
+    {{firstParagraphTitle}}
+  </p>
+  <p class="about-container__paragraph">
+    {{firstParagraph}}
+  </p>
+  <img class="about-container__map-image" src="./assets/images/map.jpg" alt="">
+  <div class="about-contact-section">
+    <div class="about-contact-section--container">
+      <p class="about-contact-section--container__title">
+        {{contactTitle}}
+      </p>
+      <button (click)="navigate('/contact')" class="main-btn white-theme-btn">CONTACT</button>
+    </div>
+  </div>
+  <p class="about-container__title">
+    {{secondParagraphTitle}}
+  </p>
+  <p class="about-container__paragraph">
+    {{secondParagraph}}
+  </p>
+  <img class="about-container__rocket-image" src="./assets/images/rocket.png" alt="">
+  <p class="about-container__title">
+    {{thirdParagraphTitle}}
+  </p>
+  <p class="about-container__paragraph">
+    {{thirdParagraph}}
+  </p>
+</div>

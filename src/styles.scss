@@ -277,5 +277,10 @@ $radiant-theme: mat-light-theme($radiant-primary, $radiant-accent, $radiant-warn
   }
 }
 
+.white-theme-btn {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
