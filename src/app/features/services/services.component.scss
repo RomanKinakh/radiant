@@ -1,0 +1,60 @@
+.service-container {
+  padding: 3.6875rem 0 3.125rem;
+  width: 100%;
+  max-width: 921px;
+  margin: 0 auto;
+  &__line {
+    border: 1px solid #000000;
+    margin-bottom: 2.5rem;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: bold;
+    padding-bottom: 0.9375rem;
+  }
+  .second-title {
+    padding-top: 1.25rem;
+  }
+  &__description {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.disciplines-container {
+  padding-top: 0.9375rem;
+  display: flex;
+  justify-content: space-between;
+  &--item {
+    width: 420px;
+    &__image {
+      width: 222px;
+      margin-bottom: 1.5625rem;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__description {
+      padding-bottom: 1.875rem;
+    }
+    &__list {
+      list-style: none;
+    }
+    &__list-text {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 14px;
+      color: #262626;
+      margin-bottom: 1.5625rem;
+    }
+  }
+}

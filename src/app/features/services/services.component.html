@@ -1,1 +1,19 @@
-<p>services works!</p>
+<app-header class="service-header" [theme]="headerTheme" [data]="headerData"></app-header>
+<div class="service-container">
+  <hr class="service-container__line"/>
+  <p class="service-container__title">{{firstTitle}}</p>
+  <p class="service-container__description">{{firstDescription}}</p>
+  <app-service-table [data]="serviceTable"></app-service-table>
+  <hr class="service-container__line"/>
+  <p class="service-container__title second-title">{{secondTitle}}</p>
+  <div class="disciplines-container">
+    <div class="disciplines-container--item" *ngFor="let disc of disciplines">
+      <img class="disciplines-container--item__image" [src]="disc?.image" alt="">
+      <p class="service-container__title disciplines-container--item__title">{{disc?.title}}</p>
+      <p class="service-container__description disciplines-container--item__description">{{disc?.description}}</p>
+      <ul class="disciplines-container--item__list">
+        <li class="disciplines-container--item__list-text" *ngFor="let item of disc?.list">{{item}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

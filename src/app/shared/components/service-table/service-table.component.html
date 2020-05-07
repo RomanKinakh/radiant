@@ -1,0 +1,34 @@
+<div class="service-table-container" *ngIf="data">
+  <div class="service-table-container__header" *ngIf="data?.header">
+    <p
+      class="service-technologies-title service-table-container__header--title"
+    >
+      {{ data?.header?.rowTitle }}
+    </p>
+    <div class="service-types-container">
+      <p
+        class="service-types-container--title service-table-container__header--title"
+      >
+        {{ data?.header?.columnTitle }}
+      </p>
+      <div class="flex">
+        <div
+          class="service-types-container--type"
+          *ngFor="let type of data?.header?.types"
+          [style]="{ backgroundColor: type?.backgroundColor }"
+        >
+          <img [src]="type?.icon" alt="" />
+          <p class="service-types-container--type__title">{{ type?.title }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="service-table-container__body" *ngIf="data?.body">
+    <div class="service-technologies-container" *ngFor="let item of data?.body">
+      <div class="service-technologies-container__title">{{item?.title}}</div>
+      <div class="service-technologies-container__item" *ngFor="let tech of item?.technologies">
+        <div class="service-technologies-container__circle" *ngIf="tech"></div>
+      </div>
+    </div>
+  </div>
+</div>

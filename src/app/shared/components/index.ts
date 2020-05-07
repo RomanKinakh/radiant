@@ -4,6 +4,7 @@ import { TechnicalExperienceComponent } from "./technical-experience/technical-e
 import { DeliveryMethodComponent } from "./delivery-method/delivery-method.component";
 import { HeaderComponent } from "./header/header.component";
 import { MenuComponent } from "./menu/menu.component";
+import { ServiceTableComponent } from "./service-table/service-table.component";
 
 export const SHARED_COMPONENTS = [
   FooterComponent,
@@ -12,6 +13,7 @@ export const SHARED_COMPONENTS = [
   DeliveryMethodComponent,
   HeaderComponent,
   MenuComponent,
+  ServiceTableComponent,
 ];
 
 export * from "./footer/footer.component";
@@ -20,3 +22,4 @@ export * from "./technical-experience/technical-experience.component";
 export * from "./delivery-method/delivery-method.component";
 export * from "./header/header.component";
 export * from "./menu/menu.component";
+export * from "./service-table/service-table.component";

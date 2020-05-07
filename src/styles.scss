@@ -263,8 +263,18 @@ $radiant-theme: mat-light-theme($radiant-primary, $radiant-accent, $radiant-warn
   width: 100%;
 }
 
+.full-height {
+  height: 100%;
+}
+
 .justify-content-end {
   justify-content: flex-end;
+}
+
+.service-header {
+  .header-container .header-container--main .header-container--main__description {
+    max-width: 540px;
+  }
 }
 
 html, body { height: 100%; }
