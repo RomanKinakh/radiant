@@ -6,7 +6,7 @@
   <mat-sidenav-content>
     <div class="main-content" [class.overflow-hidden]="isMenuOpened">
       <router-outlet></router-outlet>
-      <app-footer></app-footer>
+      <app-footer [hideTreeImage]="hideTreeImage"></app-footer>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

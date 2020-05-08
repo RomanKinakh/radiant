@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   @ViewChild("sidenav") sidenav: MatSidenav;
   title = "radiant";
   isMenuOpened = false;
+  hideTreeImage = false;
 
   constructor(private menuService: MainMenuService, private router: Router) {}
 
@@ -20,6 +21,7 @@ export class AppComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
+      this.hideTreeImage = evt.url === '/contact';
       window.scrollTo(0, 0)
     });
     this.menuService.getShowMenuValue().subscribe((value: boolean) => {

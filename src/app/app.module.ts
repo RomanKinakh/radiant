@@ -20,7 +20,7 @@ import { CurrentWorkInfoComponent } from './features/current-work-info/current-w
     AppRoutingModule,
     MatSidenavModule,
     SharedModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

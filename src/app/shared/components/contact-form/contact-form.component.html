@@ -1,0 +1,31 @@
+<div class="contact-form-container">
+  <p class="contact-form-container__title">{{ formTitle }}</p>
+  <form [formGroup]="contactForm">
+    <input class="contact-form-container__field" type="text" placeholder="Name" formControlName="name" />
+    <input
+      class="contact-form-container__field"
+      type="text"
+      placeholder="Email"
+      formControlName="email"
+    />
+    <input
+      class="contact-form-container__field"
+      type="text"
+      placeholder="Subject"
+      formControlName="subject"
+    />
+    <textarea
+      class="contact-form-container__field"
+      rows="5"
+      cols="33"
+      placeholder="Message"
+      formControlName="message"
+    ></textarea>
+    <label class="check-box-container contact-checkbox"
+    >{{checkboxLabel}}
+      <input type="checkbox"  formControlName="sendPlaybook"/>
+      <span class="checkmark"></span>
+    </label>
+    <button (click)="onFormSubmit()" type="button" class="main-btn white-theme-btn">SUBMIT</button>
+  </form>
+</div>

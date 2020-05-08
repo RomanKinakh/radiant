@@ -5,6 +5,7 @@ import { DeliveryMethodComponent } from "./delivery-method/delivery-method.compo
 import { HeaderComponent } from "./header/header.component";
 import { MenuComponent } from "./menu/menu.component";
 import { ServiceTableComponent } from "./service-table/service-table.component";
+import { ContactFormComponent } from "./contact-form/contact-form.component";
 
 export const SHARED_COMPONENTS = [
   FooterComponent,
@@ -14,6 +15,7 @@ export const SHARED_COMPONENTS = [
   HeaderComponent,
   MenuComponent,
   ServiceTableComponent,
+  ContactFormComponent,
 ];
 
 export * from "./footer/footer.component";
@@ -23,3 +25,4 @@ export * from "./delivery-method/delivery-method.component";
 export * from "./header/header.component";
 export * from "./menu/menu.component";
 export * from "./service-table/service-table.component";
+export * from "./contact-form/contact-form.component";

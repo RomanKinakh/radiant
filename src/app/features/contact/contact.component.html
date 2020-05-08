@@ -1,1 +1,23 @@
-<p>contact works!</p>
+<app-header [theme]="headerTheme" [data]="headerData"></app-header>
+<div class="contact-container">
+  <div class="contact-container--info">
+    <div *ngFor="let item of articles">
+      <p class="contact-container--info__title">{{ item?.title }}</p>
+      <p
+        class="contact-container--info__description contact-container--info__text"
+      >
+        {{ item?.description }}
+      </p>
+    </div>
+    <p class="contact-container--info__title">{{ addressTitle }}</p>
+    <p class="contact-container--info__text contact-container--info__address">
+      {{ addressText }}
+    </p>
+    <p class="contact-container--info__text" *ngFor="let item of contactInfo">
+      <span class="contact-container--info__strong">{{ item?.title }} / </span>
+      {{ item?.description }}
+    </p>
+    <img src="./assets/images/trees-birds.png" alt="" class="contact-container--info__image">
+  </div>
+  <app-contact-form></app-contact-form>
+</div>
