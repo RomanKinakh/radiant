@@ -15,7 +15,7 @@
   }
   @media screen and (max-width: 576px){
     padding: 1rem;
-    height: 500px;
+    height: 475px;
   }
   &__btn {
     position: absolute;
@@ -99,6 +99,7 @@
       font-size: 52px;
       max-width: 570px;
       line-height: 52px;
+      margin-top: 1.5rem;
     }
   }
 }

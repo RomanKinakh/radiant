@@ -6,6 +6,12 @@
   background-color: #e50000;
   padding: 1.875rem 6.25rem;
   box-sizing: border-box;
+  @media screen and (max-width: 1024px) {
+    padding: 1.875rem 3.25rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 1.875rem 2rem;
+  }
   &__logo {
     width: 130px;
     height: 84px;
@@ -16,20 +22,50 @@
   &--list {
     list-style: none;
     margin-left: 14rem;
+    @media screen and (max-width: 1024px) {
+      margin-left: 12rem;
+    }
+    @media screen and (max-width: 768px) {
+      margin-left: 8rem;
+    }
+    @media screen and (max-width: 576px) {
+      margin: 2rem 0;
+    }
     &-item {
       margin-bottom: 1.875rem;
     }
     &__link {
       font-size: 70px;
       line-height: 70px;
-      color: #FFFFFF;
+      color: #ffffff;
       text-decoration: none;
       text-transform: uppercase;
       font-weight: bold;
       position: relative;
+      @media screen and (max-width: 1024px) {
+        font-size: 64px;
+        line-height: 64px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 54px;
+        line-height: 54px;
+      }
+      @media screen and (max-width: 576px) {
+        font-size: 42px;
+        line-height: 42px;
+      }
     }
     .menu-active-link {
-      border-bottom: 20px solid #0D1B51;
+      border-bottom: 20px solid #0d1b51;
+      @media screen and (max-width: 1024px) {
+        border-bottom: 15px solid #0d1b51;
+      }
+      @media screen and (max-width: 1024px) {
+        border-bottom: 12px solid #0d1b51;
+      }
+      @media screen and (max-width: 576px) {
+        border-bottom: 8px solid #0d1b51;
+      }
     }
   }
   &__text {
@@ -38,7 +74,7 @@
     font-size: 20px;
     font-weight: 300;
     line-height: 20px;
-    color: #0D1B51;
+    color: #0d1b51;
     white-space: nowrap;
   }
 }
@@ -46,4 +82,3 @@
 .close-btn-container {
   width: 55px;
 }
-
