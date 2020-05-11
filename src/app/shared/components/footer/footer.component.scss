@@ -8,15 +8,34 @@
       width: 116px;
       height: 140px;
     }
+    @media screen and (max-width: 1024px){
+      padding: 0 3rem;
+    }
+
+    @media screen and (max-width: 768px){
+      padding: 0 2rem;
+    }
   }
   &--main {
     background-color: #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     padding: 2.15rem 10rem;
+    @media screen and (max-width: 1024px){
+      padding: 2rem 3rem;
+    }
+    @media screen and (max-width: 768px){
+      padding: 2rem;
+    }
     &__title {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media screen and (max-width: 768px){
+        flex-wrap: wrap;
+        .footer-contact-btn {
+          margin-top: 1.5rem;
+        }
+      }
       span {
         font-weight: bold;
         font-size: 28px;
@@ -24,11 +43,18 @@
         color: #ffffff;
         border: 1px solid #000000;
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        @media screen and (max-width: 1024px){
+          font-size: 24px;
+          line-height: 32px;
+        }
       }
     }
     &__menu-container {
       display: flex;
       justify-content: space-between;
+      @media screen and (max-width: 768px){
+       display: block;
+      }
     }
   }
   .horizontal-line {
@@ -39,11 +65,22 @@
   .footer-logo {
     width: 149.73px;
     height: 95.26px;
+    @media screen and (max-width: 576px){
+      width: 120px;
+      height: 80px;
+    }
   }
   .footer-menu {
-    max-width: 250px;
+    width: 250px;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width: 576px){
+      width: 180px;
+    }
+
+    @media screen and (max-width: 362px){
+      width: 130px;
+    }
   }
   .footer-item-link {
     margin-left: 3.8rem;
@@ -60,11 +97,19 @@
     &:hover {
       text-decoration: underline;
     }
+    @media screen and (max-width: 576px){
+      margin-left: 1.8rem;
+    }
   }
 
   .footer-text-container {
     position: relative;
     width: 220px;
+    @media screen and (max-width: 768px){
+      text-align: right;
+      margin-top: 1rem;
+      width: 100%;
+    }
   }
 
   .footer-text {
@@ -78,5 +123,9 @@
     position: absolute;
     bottom: 10px;
     right: 0;
+    @media screen and (max-width: 768px){
+      position: relative;
+      bottom: 0;
+    }
   }
 }
