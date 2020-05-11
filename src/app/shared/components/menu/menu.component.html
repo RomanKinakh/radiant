@@ -20,12 +20,15 @@
       </li>
     </ul>
   </div>
-  <button
-    class="menu-container--btn main-menu-container__close-btn"
-    (click)="closeMenu()"
-  >
-    <div
-      class="menu-container--btn__icon menu-container--btn__close-icon"
-    ></div>
-  </button>
+  <div class="flex flex-direction-column flex-align-item-center close-btn-container">
+    <button
+      class="menu-container--btn main-menu-container__close-btn"
+      (click)="closeMenu()"
+    >
+      <div
+        class="menu-container--btn__icon menu-container--btn__close-icon"
+      ></div>
+    </button>
+    <span class="main-menu-container__text">{{menuText}}</span>
+  </div>
 </div>

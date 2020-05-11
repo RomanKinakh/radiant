@@ -31,6 +31,8 @@ export class MenuComponent implements OnInit {
     },
     ];
 
+  menuText = "We engineer human experiences.";
+
   constructor(private menuService: MainMenuService) { }
 
   ngOnInit(): void {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MainMenuService } from '../../shared/services/main-menu.service';
 
 @Component({
   selector: "app-home",
@@ -78,7 +79,7 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private menuService: MainMenuService) {}
 
   ngOnInit() {
   }
@@ -87,5 +88,9 @@ export class HomeComponent implements OnInit {
     if (link) {
       this.router.navigateByUrl(link);
     }
+  }
+
+  openMenu() {
+    this.menuService.setShowMenuValue(true);
   }
 }

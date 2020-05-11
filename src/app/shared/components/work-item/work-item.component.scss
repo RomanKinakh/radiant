@@ -1,8 +1,12 @@
 .work-item-container {
-  width: 350px;
+  width: 100%;
   height: 400px;
+  max-width: 350px;
   margin-top: 3.8rem;
   background-size: cover;
+  @media screen and (max-width: 1225px) {
+    max-width: 320px;
+  }
   &--info {
     display: flex;
     flex-direction: column;

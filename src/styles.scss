@@ -190,6 +190,18 @@ $radiant-theme: mat-light-theme(
   display: flex;
 }
 
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.flex-align-item-center {
+  align-items: center;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   display: none !important;
@@ -220,6 +232,9 @@ $radiant-theme: mat-light-theme(
       &:hover {
         text-decoration: underline;
       }
+    }
+    @media screen and (max-width: 1024px){
+      display: none;
     }
   }
   &--btn {

@@ -26,10 +26,24 @@
       text-decoration: none;
       text-transform: uppercase;
       font-weight: bold;
+      position: relative;
     }
     .menu-active-link {
       border-bottom: 20px solid #0D1B51;
     }
   }
+  &__text {
+    transform: rotate(90deg);
+    margin-top: 10rem;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #0D1B51;
+    white-space: nowrap;
+  }
+}
+
+.close-btn-container {
+  width: 55px;
 }
 
